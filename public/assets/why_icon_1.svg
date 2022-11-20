@@ -1,0 +1,19 @@
+<svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_209_705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="81" height="80">
+<circle cx="40.5" cy="40" r="40" fill="#D7D7F8"/>
+</mask>
+<g mask="url(#mask0_209_705)">
+<circle cx="40.5" cy="40" r="40" fill="#D7D7F8"/>
+<mask id="mask1_209_705" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-12" y="23" width="68" height="73">
+<path d="M-11.5 23H33.5C45.6503 23 55.5 32.8497 55.5 45V96H-11.5V23Z" fill="#4D17E2"/>
+</mask>
+<g mask="url(#mask1_209_705)">
+<path d="M-11.5 23H33.5C45.6503 23 55.5 32.8497 55.5 45V96H-11.5V23Z" fill="#695DE9"/>
+<path d="M37.5 55H-3.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.5 64L-3.5 64" stroke="#B7B0F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="23.5" y="13" width="52" height="34" rx="13" fill="#5C52C7"/>
+</g>
+<rect x="27.5" y="16" width="41" height="27" rx="13" fill="#2B2467"/>
+<circle cx="48" cy="29.5" r="5.5" stroke="white" stroke-width="4"/>
+</g>
+</svg>
