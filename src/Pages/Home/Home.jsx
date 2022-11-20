@@ -1,5 +1,6 @@
 import AppLayout from "../../layouts/AppLayout";
 import SectionHelp from "../../components/SectionHelp.jsx";
+import WhyItem from "../../components/WhyItem";
 
 export default function Home() {
     return (
@@ -24,8 +25,25 @@ export default function Home() {
             <section className={'py-[100px]'}>
                 <div className={'container'}>
                     <div className={'text-center text-white'}>
-                        <h1 className={'text-4xl font-bold'}>Kenapa Harus Kami</h1>
-                        <div>
+                        <h1 className={'text-4xl font-bold mb-10'}>Kenapa Harus Kami</h1>
+                        <div className={'flex gap-x-10'}>
+                            <WhyItem
+                                path={'../public/assets/why_icon_1.svg'}
+                                title={'Pilihan Banyak Game'}
+                                description={'Terdapat Pilihan game pc dan mobile yang bisa kamu pilih untuk topup'}
+                            />
+
+                            <WhyItem
+                                path={'../public/assets/why_icon_2.svg'}
+                                title={'Murah dan Cepat'}
+                                description={'Pembayaran mudah dengan menggunakan e-wallet atau mobile banking'}
+                            />
+
+                            <WhyItem
+                                path={'../public/assets/why_icon_3.svg'}
+                                title={'Promo Berlimpah'}
+                                description={'Rasakan banyaknya promo yang ditawarkan oleh website kami'}
+                            />
                         </div>
                     </div>
                 </div>
