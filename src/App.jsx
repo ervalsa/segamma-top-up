@@ -1,8 +1,10 @@
-import AppLayout from "./layouts/AppLayout";
-import Home from "./Pages/Home/Home.jsx";
+import Home from './Pages/Home/Home.jsx';
+import { BrowserRouter as Routes, Route} from 'react-router-dom';
 
 export default function App() {
     return (
-        <Home/>
+        <Routes>
+            <Route path='/' component={Home} />
+        </Routes>
     );
 }
