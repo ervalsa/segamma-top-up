@@ -1,3 +1,5 @@
+// import NavLink from "./NavLink.jsx";
+import React from "react";
 import NavLink from "./NavLink.jsx";
 
 export default function Navbar({ children }) {
@@ -7,11 +9,11 @@ export default function Navbar({ children }) {
                 <div className={'flex items-center text center w-full justify-between text-white'}>
                     <img src={'../public/assets/logo.png'} alt="Segamma Logo" className={'h-10 w-10 hover:cursor-pointer'}/>
                     <div className={'flex items-center gap-x-12'}>
-                        <NavLink href="/">Home</NavLink>
-                        <NavLink href="games">Games</NavLink>
-                        <NavLink>Promo</NavLink>
-                        <NavLink>Bantuan</NavLink>
-                        <NavLink>Tentang Kami</NavLink>
+                        <NavLink to={'/'}>Home</NavLink>
+                        <NavLink to={'/games'}>Games</NavLink>
+                        <NavLink to={'/promo'}>Promo</NavLink>
+                        <NavLink to={'/bantuan'}>Bantuan</NavLink>
+                        <NavLink to={'/tentang-kami'}>Tentang Kami</NavLink>
                     </div>
                     <div className={'flex items-center gap-x-8'}>
                         <p>Masuk</p>

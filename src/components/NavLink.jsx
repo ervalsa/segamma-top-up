@@ -1,7 +1,9 @@
-export default function NavLink({ href, active, children }) {
+import { Link } from "react-router-dom";
+
+export default function NavLink({ children, to }) {
     return (
-        <p className={'hover:text-purleHaze hover:cursor-pointer hover:underline'}>
+        <Link className={'hover:text-purleHaze hover:cursor-pointer hover:underline'} to={to}>
             {children}
-        </p>
+        </Link>
     )
 }
