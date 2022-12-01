@@ -1,6 +1,7 @@
 // import NavLink from "./NavLink.jsx";
 import React from "react";
 import NavLink from "./NavLink.jsx";
+import NavLinkRounded from "./NavLinkRounded.jsx";
 
 export default function Navbar({ children }) {
     return (
@@ -16,8 +17,8 @@ export default function Navbar({ children }) {
                         <NavLink to={'/tentang-kami'}>Tentang Kami</NavLink>
                     </div>
                     <div className={'flex items-center gap-x-8'}>
-                        <p>Masuk</p>
-                        <p className={'py-2 px-6 rounded-full bg-gradient-to-b from-purleHaze to-purlerRim hover:cursor-pointer'}>Daftar</p>
+                        <NavLink to={'/login'}>Masuk</NavLink>
+                        <NavLinkRounded to={'/register'}>Daftar</NavLinkRounded>
                     </div>
                 </div>
             </nav>

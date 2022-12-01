@@ -1,6 +1,6 @@
 import AppLayout from "../../layouts/AppLayout";
 import WhyItem from "../../components/WhyItem";
-import React from "react";
+import React, { useEffect } from "react";
 import '../../assets/Slider.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick-theme.css";
 import PopularGameItem from "../../components/PopularGameItem";
 
 export default function Home() {
+
+    useEffect(() => {
+        document.title = "Segamma | Home"
+    }, []);
 
     const settings = {
         slidesToShow: 6,
