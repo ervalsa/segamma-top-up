@@ -30,7 +30,7 @@ export default function Home() {
                                 <p className={'border-b-2'}>Bantuan</p>
                             </div>
                         </div>
-                        <img src={'../public/assets/hero_image.png'} alt="Hero Image"/>
+                        <img src={'../assets/hero_image.png'} alt="Hero Image"/>
                     </div>
                 </div>
             </section>
@@ -41,19 +41,19 @@ export default function Home() {
                         <h1 className={'text-4xl font-bold mb-10'}>Kenapa Harus Kami</h1>
                         <div className={'flex gap-x-10'}>
                             <WhyItem
-                                imgPath={'../public/assets/why_icon_1.svg'}
+                                imgPath={'../assets/why_icon_1.svg'}
                                 title={'Pilihan Banyak Game'}
                                 description={'Terdapat Pilihan game pc dan mobile yang bisa kamu pilih untuk topup'}
                             />
 
                             <WhyItem
-                                imgPath={'../public/assets/why_icon_2.svg'}
+                                imgPath={'../assets/why_icon_2.svg'}
                                 title={'Murah dan Cepat'}
                                 description={'Pembayaran mudah dengan menggunakan e-wallet atau mobile banking'}
                             />
 
                             <WhyItem
-                                imgPath={'../public/assets/why_icon_3.svg'}
+                                imgPath={'../assets/why_icon_3.svg'}
                                 title={'Promo Berlimpah'}
                                 description={'Rasakan banyaknya promo yang ditawarkan oleh website kami'}
                             />
