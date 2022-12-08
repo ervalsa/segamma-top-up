@@ -30,7 +30,7 @@ export default function Home() {
                             <h1 className={'text-5xl font-bold'}>Topup Murah, Cepat, dan Terpercaya</h1>
                             <p className={'text-xl'}>Kami menyediakan jutaan cara untuk membantu <br/> players menjadi pemenang sejati</p>
                             <div className={'flex flex-row items-center gap-x-6'}>
-                                <p className={'py-4 px-6 font-bold rounded-full bg-gradient-to-b from-purleHaze to-purlerRim hover:cursor-pointer'}>Ayo Topup Sekarang</p>
+                                <p className={'py-4 px-6 font-bold rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim hover:cursor-pointer'}>Ayo Topup Sekarang</p>
                                 <p className={'border-b-2'}>Bantuan</p>
                             </div>
                         </div>

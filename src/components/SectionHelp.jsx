@@ -6,7 +6,7 @@ export default function SectionHelp() {
                     <h1 className={'text-3xl font-bold'}>Masih Bingung?<br/>Kami akan cari solusi terbaik untuk Anda!</h1>
                     <p>Dapatkan dukungan pelanggan dengan menghubungi kami</p>
                     <div>
-                        <button className={'py-2 px-6 text-center font-bold rounded-full bg-gradient-to-b from-purleHaze to-purlerRim hover:cursor-pointer'}>
+                        <button className={'py-2 px-6 text-center font-bold rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim hover:cursor-pointer'}>
                             <span className={'flex gap-x-3'}>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                     <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
