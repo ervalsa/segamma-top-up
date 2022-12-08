@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function NavLink({ children, to, active }) {
+
+    const [navMenu, setNavMenu] = useState(false);
+
     return (
-        <Link className={'hover:text-purleHaze hover:cursor-pointer hover:underline'} 
+        <Link className={'text-white hover:text-purleHaze hover:cursor-pointer'} 
             to={to}>
             {children}
         </Link>
