@@ -7,23 +7,17 @@ export default function Login() {
     }, []);
 
     return (
-        <div className={'flex flex-row w-full text-white'}>
-            <div className={'container'}>
-                <div className={'bg-lightGray w-1/2'}>
-                    <img src={'../assets/logo_rounded.png'} alt="Segamma Logo" className={'h-28 w-28'}/>
-                    <div className={'mb-4'}>
-                        <h1 className={'font-bold'}>Masuk</h1>
-                        <p>Masuk untuk melakukan proses Topup</p>
-                    </div>
-                    <div>
-                        <p>Alamat Email</p>
-                        <p>Kata Sandi</p>
-                    </div>
+        <div className={'flex flex-row w-screen h-screen text-white'}>
+            <div className={'basis-1/2  flex flex-col bg-lightGray'}>
+                <div className="m-auto">
+                    <img className="w-20 h-20" src="../assets/logo_rounded.png" alt="Logo Rounded"/>
                 </div>
             </div>
-            <div className={'container'}>
-                <div className={'bg-darkBlue w-1/2'}>
-                    <img src={'../assets/hero_login.png'} alt="People with VR" />
+            <div className={'basis-1/2 flex bg-darkBlue h-screen'}>
+                <div className="m-auto">
+                    <img src="../assets/hero_login.png" alt="Login hero"/>
+                    <h1 className="text-center mt-10 text-xl font-bold">Menangkan Permainan<br/>Jadilah Sang Juara</h1>
+                    <p className="text-center mt-6 text-lg">Kami menyediakan beribu cara<br/>untuk mendukung player game sejati seperti<br/>dirimu untuk menjadi pemenang sejati</p>
                 </div>
             </div>
         </div>
