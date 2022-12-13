@@ -1,7 +1,14 @@
-export default function NavLink({ href, active, children }) {
+import clsx from "clsx";
+import { Link, useLocation} from "react-router-dom";
+
+export default function NavLink({ children, to}) {
+
+    const isActive = useLocation().pathname == to;
+
     return (
-        <p className={'hover:text-purleHaze hover:cursor-pointer hover:underline'}>
+        <Link className={clsx('text-white hover:text-purpleHaze hover:cursor-pointer', isActive ? 'text-purpleHaze' : 'text-white')}
+            to={to}>
             {children}
-        </p>
+        </Link>
     )
 }
