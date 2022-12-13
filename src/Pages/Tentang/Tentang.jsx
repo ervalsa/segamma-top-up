@@ -8,7 +8,7 @@ export default function TentangKami() {
 
     return (
         <AppLayout>
-            <div className="relative h-[600px]">
+            <div className="relative h-[600px] font-inter">
                 <img className="absolute h-full object-cover top-0 left-0 w-screen opacity-40" src="/assets/banner_tentang_kami.svg" alt="Banner Promo" />
                 <div className="absolute w-full h-full flex flex-col justify-center items-center gap-y-4 text-white z-10 lg:mx-0">
                     <h1 className="text-3xl text-center font-bold mx-6 lg:mx-0">Menyediakan produk game digital</h1>

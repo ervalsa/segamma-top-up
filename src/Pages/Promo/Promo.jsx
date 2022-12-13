@@ -10,7 +10,7 @@ export default function Promo() {
 
     return (
         <AppLayout>
-            <div className="relative h-[300px]">
+            <div className="relative h-[300px] font-inter">
                 <img className="absolute h-full object-cover top-0 left-0 w-screen opacity-40" src="/assets/banner_promo.svg" alt="Banner Promo" />
                 <div className="absolute w-full h-full flex flex-col justify-center items-center gap-y-4 text-white z-10">
                     <h1 className="text-3xl font-bold">Promo</h1>
