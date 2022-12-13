@@ -4,13 +4,13 @@ import SectionHelp from "../components/SectionHelp";
 
 export default function AppLayout({ children }) {
     return (
-        <div className={'bg-darkBlue font-inter'}>
-            <Navbar/>
+        <div className={"bg-darkBlue font-inter"}>
+            <Navbar />
             <main>
                 {children}
-                <SectionHelp/>
+                <SectionHelp />
             </main>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
