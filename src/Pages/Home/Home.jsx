@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PopularGameItem from "../../components/PopularGameItem";
+import NavLink from "../../components/NavLink";
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
                             <p className={'text-xl'}>Kami menyediakan jutaan cara untuk membantu <br/> players menjadi pemenang sejati</p>
                             <div className={'flex flex-row items-center gap-x-6'}>
                                 <p className={'py-4 px-6 font-bold rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim hover:cursor-pointer'}>Ayo Topup Sekarang</p>
-                                <p className={'border-b-2'}>Bantuan</p>
+                                <NavLink>Bantuan</NavLink>
                             </div>
                         </div>
                         <img src={'../assets/hero_image.png'} alt="Hero Image"/>
@@ -39,11 +40,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className={'py-[50px]'}>
-                <div className={'container'}>
-                    <div className={'text-center text-white'}>
-                        <h1 className={'text-4xl font-bold mb-10'}>Kenapa Harus Kami</h1>
-                        <div className={'flex gap-x-10'}>
+            <section className='py-[50px]'>
+                <div className='container'>
+                    <div className='text-center text-white'>
+                        <h1 className='text-4xl font-bold mb-10'>Kenapa Harus Kami</h1>
+                        <div className='flex flex-col lg:flex-row gap-x-10'>
                             <WhyItem
                                 imgPath={'../assets/why_icon_1.svg'}
                                 title={'Pilihan Banyak Game'}
@@ -66,9 +67,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className={'py-[50px]'}>
-                <div className={'container text-white'}>
-                    <h1 className={'text-4xl font-bold mb-10'}>Game Populer</h1>
+            <section className='py-[50px]'>
+                <div className='container text-white'>
+                    <h1 className='text-4xl font-bold mb-10'>Game Populer</h1>
                     <Slider {...settings}>
                         <PopularGameItem/>
                         <PopularGameItem/>
@@ -90,10 +91,14 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className={'py-[50px]'}>
-                <div className={'container text-white'}>
-                    <h1 className={'text-4xl text-center font-bold mb-10'}>Metode Pembayaran</h1>
+            <section className='py-[50px]'>
+                <div className='container text-white'>
+                    <h1 className='text-4xl text-center font-bold mb-10'>Metode Pembayaran</h1>
                 </div>
+            </section>
+
+            <section>
+
             </section>
         </AppLayout>
     );
