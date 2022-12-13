@@ -58,7 +58,7 @@ export default function Home() {
                     <div className="flex flex-col lg:flex-row justify-center gap-16">
                         <img className="d-none" src="../assets/hero_login.png" alt="People with VR" />
                         <div className="flex flex-col text-white justify-center gap-y-8">
-                            <h1 className="text-4xl font-bold">Win the battle.<br/>Be the Champion.</h1>
+                            <h1 className="text-4xl font-bold">Menangkan Permainan<br/>Jadilah Sang Juara</h1>
                             <p className="text-lg">Kami menyediakan beribu cara<br/>untuk mendukung player game sejati seperti<br/>dirimu untuk menjadi pemenang sejati</p>
                             <NavLinkRounded>Ayo Topup Sekarang</NavLinkRounded>
                         </div>
