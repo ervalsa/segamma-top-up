@@ -46,6 +46,7 @@ export default function Navbar({ children }) {
                         <NavLink to={'/promo'}>Promo</NavLink>
                         <NavLink to={'/bantuan'}>Bantuan</NavLink>
                         <NavLink to={'/tentang-kami'}>Tentang Kami</NavLink>
+                        <NavLink className="block lg:hidden" to='/login'>Masuk</NavLink>
                     </div>
                     
                     <div className='flex items-center gap-x-8 mr-5 lg:m-0'>

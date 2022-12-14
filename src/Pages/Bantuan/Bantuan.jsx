@@ -20,7 +20,7 @@ export default function Bantuan() {
             </div>
 
             <section className="mt-[100px] mx-6 flex justify-center content-center">
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 w-11/12 gap-4">
                     <div className="bg-gradient-to-b from-purpleHaze to-purpleRim px-4 py-5 rounded-full col-span-3 text-center text-white font-semibold">Akun Segamma</div>
                     <div className="bg-gradient-to-b from-purpleHaze to-purpleRim px-4 py-10 col-span-3 lg:col-span-1 rounded-lg text-center text-white font-semibold">Pengumuman Layanan</div>
                     <div className="bg-gradient-to-b from-purpleHaze to-purpleRim px-4 py-10 col-span-3 lg:col-span-1 rounded-lg text-center text-white font-semibold">Syarat & Ketentuan</div>
