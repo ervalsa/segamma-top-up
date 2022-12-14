@@ -8,8 +8,8 @@ export default function Login() {
     }, []);
 
     return (
-        <div className={'flex flex-row w-screen h-screen text-white font-inter'}>
-            <div className={'w-full lg:basis-1/2 flex flex-col justify-center items-center bg-lightGray'}>
+        <div className='flex flex-row w-screen h-screen text-white font-inter'>
+            <div className='w-full lg:basis-1/2 flex flex-col justify-center items-center bg-lightGray'>
                 <div className="w-3/4 flex flex-col">
                     <img className="w-24 h-24 self-center" src="../assets/logo_rounded.png" alt="Logo Rounded"/>
                     <div className="flex flex-col gap-y-2 mt-4">
@@ -28,7 +28,7 @@ export default function Login() {
                         <NavLink className="mb-8 text-lg text-purpleHaze font-semibold flex justify-end underline">Lupa Kata Sandi?</NavLink>
                         <input className="w-full py-4 hover:cursor-pointer font-semibold rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim" type="submit" value="Masuk"/>
                         <div className="flex gap-x-3 justify-center mt-4">
-                            <label htmlFor="forgot">Tidak punya akun?</label>
+                            <label htmlFor="no-account">Tidak punya akun?</label>
                             <NavLink className="text-purpleHaze font-semibold underline" to={'/register'}>Daftar di sini</NavLink>
                         </div>
                     </form>
