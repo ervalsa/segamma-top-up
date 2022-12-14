@@ -27,7 +27,7 @@ export default function Login() {
                         </div>
                         <NavLink className="mb-8 text-lg text-purpleHaze font-semibold flex justify-end underline">Lupa Kata Sandi?</NavLink>
                         <input className="w-full py-4 hover:cursor-pointer font-semibold rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim" type="submit" value="Masuk"/>
-                        <div className="flex gap-x-3 justify-center mt-4">
+                        <div className="flex flex-col lg:flex-row text-center gap-y-2 lg:gap-x-3 justify-center mt-4">
                             <label htmlFor="no-account">Tidak punya akun?</label>
                             <NavLink className="text-purpleHaze font-semibold underline" to={'/register'}>Daftar di sini</NavLink>
                         </div>
