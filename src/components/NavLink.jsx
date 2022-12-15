@@ -6,7 +6,7 @@ export default function NavLink({ children, to, className }) {
 
     return (
         <Link
-            className={`${className} "text-white hover:text-purpleHaze hover:cursor-pointer" ${isActive ? "text-purpleHaze" : "text-white"} `}
+            className={`${className} text-white hover:text-purpleHaze hover:cursor-pointer ${isActive ? "text-purpleHaze" : "text-white"} `}
             to={to}
         >
             {children}

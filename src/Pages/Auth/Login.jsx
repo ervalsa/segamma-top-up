@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import NavLink from "../../components/NavLink";
 
 export default function Login() {
@@ -13,6 +14,7 @@ export default function Login() {
                 <div className="w-3/4 flex flex-col">
                     <img className="w-24 h-24 self-center" src="../assets/logo_rounded.png" alt="Logo Rounded"/>
                     <div className="flex flex-col gap-y-2 mt-4">
+                        <h1></h1>
                         <h1 className="text-2xl font-bold">Masuk</h1>
                         <p>Masuk untuk melakukan proses Topup</p>
                     </div>

@@ -27,8 +27,8 @@ export default function App() {
             }>
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/games-mobile' element={<GamesPc />} />
-                    <Route path='/games-pc' element={<GamesMobile />} />
+                    <Route path='/games-mobile' element={<GamesMobile />} />
+                    <Route path='/games-pc' element={<GamesPc />} />
                     <Route path='/promo' element={<Promo />} />
                     <Route path='/bantuan' element={<Bantuan />} />
                     <Route path='/tentang-kami' element={<TentangKami />} />
