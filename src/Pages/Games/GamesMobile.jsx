@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import NavLinkRounded from "../../components/NavLinkRounded.jsx";
 import AppLayout from "../../layouts/AppLayout.jsx";
 import { getAllMobileGames, getAllUsers } from "../../api/api.js";
 import ListGames from "../../components/ListGames.jsx";
@@ -35,7 +34,7 @@ export default function GamesMobile() {
     useEffect(() => {
         document.title = "Segamma | Games Mobile";
 
-        getAllUsers().then(json => {
+        getAllMobileGames().then(json => {
             setUsers(json)
             setSearchResults(json)
         })

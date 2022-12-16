@@ -1,11 +1,19 @@
 import React, { useEffect } from "react";
 import AppLayout from "../../layouts/AppLayout.jsx";
 import { FaTelegramPlane } from "react-icons/fa";
+import { useState } from "react";
+import { getAllPromo } from "../../api/api.js";
 
 export default function Promo() {
 
+    const [promos, setPromos] = useState([]);
+
     useEffect(() => {
         document.title = "Segamma | Promo";
+
+        getAllPromo().then(json => {
+            setPromos(json)
+        })
     }, []);
 
     return (
@@ -22,6 +30,17 @@ export default function Promo() {
                             <span><FaTelegramPlane className="h-6 w-6"/></span> Berlangganan
                         </button>
                     </form>
+                </div>
+            </div>
+            <div className="container">
+                <div className="text-white grid grid-cols-1 md:grid-cols-2 mx-4 lg:grid-cols-4 gap-x-28">
+                    {promos.map((promo) => {
+                        return (
+                            <div className="mt-24 bg-lightGray w-[280px] h-[350px] flex flex-col items-center text-white bg-gradient-to-b from-lighterGray to-darkGray rounded-lg" key={promo.id}>
+                                <img className="w-full" src={promo.avatar} alt="Photo Promo" />
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </AppLayout>
