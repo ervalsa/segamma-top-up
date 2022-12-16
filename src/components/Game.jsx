@@ -9,7 +9,7 @@ export default function Game({ game }) {
                     <p className="mt-2 break-words text-sm">{game.publisher}</p>
                     <h4 className="font-bold text-lg">{game.title}</h4>
                 </div>
-                <NavLinkRounded className="py-2 mb-6 font-semibold">Top Up</NavLinkRounded>
+                <NavLinkRounded to={`/games/${game.id}`} className="py-2 mb-6 font-semibold">Top Up</NavLinkRounded>
             </div>
         </article>
     )

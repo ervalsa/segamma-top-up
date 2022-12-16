@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const Home = lazy(() => import("./Pages/Home/Home.jsx"));
 const GamesPc = lazy(() => import("./Pages/Games/GamesPc.jsx"));
 const GamesMobile = lazy(() => import("./Pages/Games/GamesMobile.jsx"));
+const GamesDetail = lazy(() => import("./Pages/Games/GamesDetail.jsx"));
 const Promo = lazy(() => import("./Pages/Promo/Promo.jsx"));
 const PromoDetail = lazy(() => import("./Pages/Promo/PromoDetail.jsx"));
 const TentangKami = lazy(() => import("./Pages/Tentang/Tentang.jsx"));
@@ -30,6 +31,7 @@ export default function App() {
                     <Route path='/' element={<Home />} />
                     <Route path='/games-mobile' element={<GamesMobile />} />
                     <Route path='/games-pc' element={<GamesPc />} />
+                    <Route path='/games/:gameId' element={<GamesDetail />} />
                     <Route path='/promo' element={<Promo />} />
                     <Route path='/promo/:promoId' element={<PromoDetail />} />
                     <Route path='/bantuan' element={<Bantuan />} />

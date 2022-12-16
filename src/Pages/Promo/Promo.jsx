@@ -4,6 +4,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { useState } from "react";
 import { getAllPromo } from "../../api/api.js";
 import { Link } from "react-router-dom";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Promo() {
 
@@ -37,7 +39,7 @@ export default function Promo() {
                     {promos.map((promo) => {
                         return (
                             <div className="mt-20 bg-lightGray overflow-clip w-full flex flex-col items-center text-white bg-gradient-to-b from-lighterGray to-darkGray rounded-lg" key={promo.id}>
-                                <img className="w-full h-[150px] object-cover" src={promo.promo_cover} alt="Photo Promo" />
+                                <img className="w-full h-[150px] object-cover" src={promo.promo_cover || <Skeleton count={10}/>} alt="Photo Promo" />
                                 <div className="flex flex-col mt-4">
                                     <h1 className="line-clamp-1 font-bold px-4 w-full text-center">{promo.title}</h1>
                                 </div>
