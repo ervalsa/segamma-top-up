@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import AppLayout from "../../layouts/AppLayout.jsx";
+import GameLayout from "../../layouts/GameLayout.jsx";
 import { getAllMobileGames, getAllUsers } from "../../api/api.js";
 import ListGames from "../../components/ListGames.jsx";
 
@@ -41,7 +41,7 @@ export default function GamesMobile() {
     }, []);
 
     return (
-        <AppLayout>
+        <GameLayout>
             <div className="container">
                 <div className="flex flex-col justify-center items-center mt-16 text-white">
                     <h1 className="text-2xl font-bold mb-8">Game Mobile</h1>
@@ -59,6 +59,6 @@ export default function GamesMobile() {
                     <ListGames searchResults={searchResults}/>
                 </div>
             </div>
-        </AppLayout>
+        </GameLayout>
     );
 }
