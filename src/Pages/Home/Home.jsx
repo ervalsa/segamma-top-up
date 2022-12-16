@@ -20,8 +20,8 @@ export default function Home() {
                             <h1 className={'text-5xl font-bold'}>Topup Murah, Cepat, dan Terpercaya</h1>
                             <p className={'text-xl'}>Kami menyediakan jutaan cara untuk membantu <br/> players menjadi pemenang sejati</p>
                             <div className={'flex flex-row items-center gap-x-6'}>
-                                <p className={'py-4 px-6 font-bold rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim hover:cursor-pointer'}>Ayo Topup Sekarang</p>
-                                <NavLink>Bantuan</NavLink>
+                                <NavLink to={'/games-mobile'} className={'py-4 px-6 font-bold hover:text-white rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim'}>Ayo Topup Sekarang</NavLink>
+                                <NavLink to={'/bantuan'}>Bantuan</NavLink>
                             </div>
                         </div>
                         <img src={'../assets/hero_image.png'} alt="Hero Image"/>
