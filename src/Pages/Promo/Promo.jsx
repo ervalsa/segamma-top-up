@@ -36,19 +36,19 @@ export default function Promo() {
                 <div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-4 gap-x-28">
                     {promos.map((promo) => {
                         return (
-                            <div className="mt-20 bg-lightGray overflow-clip w-full h-[350px] flex flex-col items-center text-white bg-gradient-to-b from-lighterGray to-darkGray rounded-lg" key={promo.id}>
-                                <img className="w-full h-[150px] object-cover" src={promo.avatar} alt="Photo Promo" />
+                            <div className="mt-20 bg-lightGray overflow-clip w-full flex flex-col items-center text-white bg-gradient-to-b from-lighterGray to-darkGray rounded-lg" key={promo.id}>
+                                <img className="w-full h-[150px] object-cover" src={promo.promo_cover} alt="Photo Promo" />
                                 <div className="flex flex-col mt-4">
-                                    <h1 className="font-bold w-full text-center">{promo.name}</h1>
+                                    <h1 className="line-clamp-1 font-bold px-4 w-full text-center">{promo.title}</h1>
+                                </div>
+                                <div className="w-full px-4 mb-4">
                                     <span className="flex flex-row justify-center gap-x-2 mt-4 mb-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         Berlaku Hingga
                                     </span>
-                                    <p className="w-full text-center">{promo.createdAt}</p>
-                                </div>
-                                <div className="w-full px-4">
+                                    <p className="w-full text-center">{promo.promo_duration}</p>
                                     <button className="w-full mt-4 py-2 bg-gradient-to-b from-purpleHaze to-purpleRim rounded-lg">Lihat Detail</button>
                                 </div>
                             </div>
