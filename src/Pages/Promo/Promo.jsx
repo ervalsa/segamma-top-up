@@ -3,6 +3,7 @@ import AppLayout from "../../layouts/AppLayout.jsx";
 import { FaTelegramPlane } from "react-icons/fa";
 import { useState } from "react";
 import { getAllPromo } from "../../api/api.js";
+import { Link } from "react-router-dom";
 
 export default function Promo() {
 
@@ -25,7 +26,6 @@ export default function Promo() {
                     <p className="text-center px-6">Dapatkan penawaran promo menarik, jangan sampai kelewatan!</p> 
                     <form className="flex flex-col gap-y-4 lg:flex-row lg:gap-x-4" action="">
                         <input className="bg-lightGray px-8 py-4 rounded-full focus:outline-none focus:ring focus:ring-purpleHaze" type="text" placeholder="Alamat email anda"/>
-
                         <button className="px-8 py-4 flex gap-x-3 justify-center items-center rounded-full bg-gradient-to-b from-purpleHaze to-purpleRim font-bold" type="submit">
                             <span><FaTelegramPlane className="h-6 w-6"/></span> Berlangganan
                         </button>
@@ -41,15 +41,15 @@ export default function Promo() {
                                 <div className="flex flex-col mt-4">
                                     <h1 className="line-clamp-1 font-bold px-4 w-full text-center">{promo.title}</h1>
                                 </div>
-                                <div className="w-full px-4 mb-4">
+                                <div className="w-full px-4 mb-4 flex flex-col text-center">
                                     <span className="flex flex-row justify-center gap-x-2 mt-4 mb-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         Berlaku Hingga
                                     </span>
-                                    <p className="w-full text-center">{promo.promo_duration}</p>
-                                    <button className="w-full mt-4 py-2 bg-gradient-to-b from-purpleHaze to-purpleRim rounded-lg">Lihat Detail</button>
+                                    <p className="w-full text-center mb-4">{promo.promo_duration}</p>
+                                    <Link to={`/promo/${promo.id}`} className="w-full py-2 hover:text-white bg-gradient-to-b from-purpleHaze to-purpleRim rounded-lg">Lihat Detail</Link>
                                 </div>
                             </div>
                         )

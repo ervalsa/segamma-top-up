@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import GameLayout from "../../layouts/GameLayout.jsx";
-import { getAllMobileGames, getAllUsers } from "../../api/api.js";
+import { getAllMobileGames } from "../../api/api.js";
 import ListGames from "../../components/ListGames.jsx";
 
 export default function GamesMobile() {
