@@ -7,6 +7,7 @@ export default function GamesMobile() {
 
     const [games, setGames] = useState([]);
     const [searchResults, setSearchResults] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     const handleSearchChange = (e) => {
         const timeoutId = setTimeout(() => {
