@@ -51,7 +51,7 @@ export default function Promo() {
                                         Berlaku Hingga
                                     </span>
                                     <p className="w-full text-center mb-4">{promo.promo_duration}</p>
-                                    <Link to={`/promo/${promo.id}`} className="w-full py-2 hover:text-white bg-gradient-to-b from-purpleHaze to-purpleRim rounded-lg">Lihat Detail</Link>
+                                    <Link className="w-full py-2 hover:text-white bg-gradient-to-b from-purpleHaze to-purpleRim rounded-lg">Lihat Detail</Link>
                                 </div>
                             </div>
                         )

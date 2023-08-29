@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='py-[50px] mx-6 lg:mx-0'>
+            <section className='py-[100px] mx-6 lg:mx-0'>
                 <div className='container'>
                     <div className='text-center text-white'>
                         <h1 className='text-4xl font-bold mb-10'>Kenapa Harus Kami</h1>
@@ -53,7 +53,23 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-[50px] mx-6 lg:mx-0">
+            <section className="py-[100px] mx-6 lg:mx-0">
+                <div className="container">
+                    <div className="text-center text-white">
+                        <h1 className='text-4xl font-bold mb-10'>Game Populer</h1>
+                        <div className="flex flex-col gap-y-6 px-6 lg:px-0 lg:gap-y-0 lg:flex-row justify-between">
+                            <img className="" src="../assets/game_coc.png" alt="Clash of Clans" />
+                            <img className="" src="../assets/game_ff.png" alt="Clash of Clans" />
+                            <img className="" src="../assets/game_genshin.png" alt="Clash of Clans" />
+                            <img className="" src="../assets/game_cod.png" alt="Clash of Clans" />
+                            <img className="" src="../assets/game_dn.png" alt="Clash of Clans" />
+                            <img className="" src="../assets/game_ragnarok.png" alt="Clash of Clans" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-[100px] mx-6 lg:mx-0">
                 <div className="container">
                     <div className="flex flex-col lg:flex-row justify-center gap-16">
                         <img className="d-none" src="../assets/hero_login.png" alt="People with VR" />

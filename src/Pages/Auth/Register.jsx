@@ -24,15 +24,13 @@ export default function Register() {
         e.preventDefault();
 
         const userData = {
-            name: data.email,
+            name: data.name,
             email: data.email,
             password: data.password
         };
 
         axios.post("https://639a64b2d51415019734d045.mockapi.io/api/v1/users", userData)
         .then((response) => {console.log(response.status)})
-
-
     }
 
     useEffect(() => {

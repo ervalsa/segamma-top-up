@@ -12,7 +12,7 @@ export default function GamesMobile() {
     const handleSearchChange = (e) => {
         const timeoutId = setTimeout(() => {
             const nameSearch = e.target.value;
-            console.log(nameSearch);
+            
             if (!nameSearch) return setSearchResults(games);
 
             const resultArray = games.filter(game => game.title.toLowerCase().includes(nameSearch));
